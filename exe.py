@@ -5,18 +5,6 @@ from prog_funcoes import*
 # Declaração de classe
 lista_sistema = Lista_Geral()
 
-# Preenchimento de lista_sistema temporário
-p1 = Cliente('Tay',12312312310, '01/11/1990')
-p2 = Cliente('Fer',12312312311, '06/04/1989')
-p3 = Cliente('Jan',12312312312, '20/01/1997')
-p4 = Cliente('Anf',12312312313, '15/11/1992')
-
-lista_sistema.adicionar_cadastros(p1)
-lista_sistema.adicionar_cadastros(p2)
-lista_sistema.adicionar_cadastros(p3)
-lista_sistema.adicionar_cadastros(p4)
-
-
 # Declaração de menu principal
 str_menu_principal = '1 - Cadastrar Cliente\n2 - Cadastrar Conta\n3 - Movimentar Conta\n4 - Verificar Cadastros\n5 - Lista Geral\n6 - Área do Programador\n0 - Encerrar'
 

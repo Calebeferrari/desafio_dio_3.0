@@ -181,34 +181,3 @@ class Lista_Geral:
 
         return validador_cpf
 
-#------------------------------------------------------------
-if __name__ == "__main__":
-
-    p1 = Cliente('Tay',12312312310, '01/11/1990')
-    p2 = Cliente('Fer',12312312311, '06/04/1989')
-    p3 = Cliente('Jan',12312312312, '20/01/1997')
-    p4 = Cliente('Anf',12312312313, '15/11/1992')
-
-    lista_teste = Lista_Geral()
-    lista_teste.adicionar_cadastros(p1)
-    lista_teste.adicionar_cadastros(p2)
-    lista_teste.adicionar_cadastros(p3)
-    lista_teste.adicionar_cadastros(p4)
-
-    lista_teste.organizar_lista(lista_teste.lista_clientes)
-
-    c1 = Conta()
-    c2 = Conta()
-
-    p1.vincular_conta(c1)
-    #p1.vincular_conta(c2)
-
-    c1.deposito(200)
-    c1.saque(50)
-    
-    #print(c1.saldo)
-    print(c1.extrato_bancario())
-
-
-
-

@@ -370,36 +370,3 @@ def movimentar_conta(posicao_lista, lista_ac):
                     sleep_general()
                     clear_screem()
                     break
-
-
-
-#-------------------------------------------------------------
-if __name__ == "__main__":
-
-    lista_correcao = Lista_Geral()
-
-    p1 = Cliente('Tay', 12312312310, '01/11/1990')
-    p2 = Cliente('Fer', 12312312311, '06/04/1989')
-    p3 = Cliente('Jan', 12312312312, '20/01/1997')
-    p4 = Cliente('Anf', 12312312313, '15/11/1992')
-
-    lista_correcao.adicionar_cadastros(p1)
-    lista_correcao.adicionar_cadastros(p2)
-    lista_correcao.adicionar_cadastros(p3)
-    lista_correcao.adicionar_cadastros(p4)
-
-    c1 = Conta()
-    c2 = Conta()
-
-    p1.vincular_conta(c1)
-    p1.vincular_conta(c2)
-
-    while True:
-        opc_p = pesquisar_cadastro(lista_correcao)
-
-        if opc_p == None:
-            break
-
-        movimentar_conta(opc_p, lista_correcao)
-
-    #print(lista_correcao.lista_clientes)

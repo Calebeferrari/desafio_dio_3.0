@@ -186,10 +186,3 @@ def confirmacao(msg_str, cls_exit=True):
             else:
                 return opc_confirmacao
 
-
-#-----------------------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    opc = confirmacao('O arquivo será excluído.', False)
-
-    print(opc)
